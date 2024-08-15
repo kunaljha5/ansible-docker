@@ -69,6 +69,8 @@ docker__pip_dependencies:
 docker__pip_virtualenv: "/usr/local/lib/docker/virtualenv"
 
 docker__default_pip_packages:
+  - name: pyyaml
+    version: "5.3.1"
   - name: "docker"
     state: "{{ docker__pip_docker_state }}"
   - name: "docker-compose"
